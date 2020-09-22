@@ -9,11 +9,11 @@ const Main: React.FC = () => {
                 <button>
                     <BackIcon />
                 </button>
+                <ProfileInfo>
+                    <strong>Arthur Andrade</strong>
+                    <span>899 Tweets</span>
+                </ProfileInfo>
             </Header>
-            <ProfileInfo>
-                <strong>Arthur Andrade</strong>
-                <span>899</span>
-            </ProfileInfo>
 
             {/* <ProfilePage/> */}
 

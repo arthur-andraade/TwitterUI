@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import { Chat, Favorite, Repeat, Upload } from '../../styles/Icons';
+import { Chat, Favorite, Repeat, Upload } from "../../styles/Icons";
 
 export const Container = styled.div`
     display: flex;
@@ -15,6 +15,13 @@ export const Retweet = styled.div`
     align-items: center;
     font-size: 13px;
     color: var(--gray);
+    padding-left: 36px;
+
+    > svg {
+        margin-right: 13px;
+        width: 13px;
+        height: 13px;
+    }
 `;
 
 export const Body = styled.div`
@@ -52,11 +59,13 @@ export const Header = styled.div`
         margin-right: 5px;
     }
 
-    > span, time {
+    > span,
+    time {
         color: var(--gray);
     }
 
-    >strong, span{
+    > strong,
+    span {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -97,7 +106,7 @@ export const Icons = styled.div`
     margin: 11px 0 0;
     width: 90%;
 
-    @media(max-width: 350px){
+    @media (max-width: 350px) {
         width: 100%;
     }
 
@@ -119,15 +128,15 @@ export const Status = styled.div`
         margin-right: 5px;
     }
 
-    &:nth-child(1):hover{
+    &:nth-child(1):hover {
         color: var(--twitter);
     }
 
-    &:nth-child(2):hover{
+    &:nth-child(2):hover {
         color: var(--retweet);
     }
 
-    &:nth-child(3):hover{
+    &:nth-child(3):hover {
         color: var(--like);
 
         > svg {
@@ -135,9 +144,9 @@ export const Status = styled.div`
         }
     }
 
-    &:nth-child(4):hover{
+    &:nth-child(4):hover {
         color: var(--twitter);
-    }    
+    }
 `;
 
 const IconCSS = css`

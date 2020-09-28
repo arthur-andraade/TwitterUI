@@ -14,6 +14,7 @@ import {
     ComentIcon,
     RetweetIcon,
     LikeIcon,
+    UploadIcon,
     Dot,
 } from './styles';
 
@@ -49,6 +50,9 @@ const Tweet: React.FC = () => {
                         <Status>
                             <LikeIcon />
                             899
+                        </Status>
+                        <Status>
+                            <UploadIcon />
                         </Status>
                     </Icons>
                 </Content>

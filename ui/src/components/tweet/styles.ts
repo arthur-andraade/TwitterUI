@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Chat, Favorite, RotateCcw } from '../../styles/Icons';
+import { Chat, Favorite, Repeat, Upload } from '../../styles/Icons';
 
 export const Container = styled.div`
     display: flex;
@@ -95,10 +95,10 @@ export const Icons = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 11px 0 0;
-    width: 100%;
+    width: 90%;
 
-    @media(min-width: 330px){
-        width: 63%;
+    @media(max-width: 350px){
+        width: 100%;
     }
 
     > div {
@@ -134,6 +134,10 @@ export const Status = styled.div`
             fill: var(--like);
         }
     }
+
+    &:nth-child(4):hover{
+        color: var(--twitter);
+    }    
 `;
 
 const IconCSS = css`
@@ -145,10 +149,14 @@ export const ComentIcon = styled(Chat)`
     ${IconCSS}
 `;
 
-export const RetweetIcon = styled(RotateCcw)`
-    ${IconCSS};
+export const RetweetIcon = styled(Repeat)`
+    ${IconCSS}
 `;
 
 export const LikeIcon = styled(Favorite)`
+    ${IconCSS}
+`;
+
+export const UploadIcon = styled(Upload)`
     ${IconCSS}
 `;

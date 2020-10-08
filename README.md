@@ -2,6 +2,8 @@
 <br>
 I builded this UI to execute my skills in technologies like...
 <br>
-* **React.js**
-* **Typescript**
-* **Styled-components**
+<ul>
+  <li><strong>React.js </strong></li>
+  <li><strong>Typescript </strong></li>
+  <li><strong>Styled-components </strong></li>
+<ul>
